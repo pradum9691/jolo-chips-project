@@ -9,7 +9,7 @@ import VideoSection from "./components/MultiVideoSection.jsx";
 
 export default function App() {
   return (
-    <div className="font-sans bg-black overflow-x-hidden">
+    <div className="font-sans bg-black overflow-x-hidden text-white">
       <ScrollBar />
       <Navbar />
       <Hero />

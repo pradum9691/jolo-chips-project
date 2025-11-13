@@ -14,18 +14,18 @@ export default function ImageSlider() {
     <section className="w-full bg-black py-20 overflow-hidden flex justify-center items-center">
       <div className="relative flex w-[200%]">
         <motion.div
-          className="flex gap-10"
+          className="flex gap-6 sm:gap-8 md:gap-10"
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             ease: "linear",
-            duration: 40, 
+            duration: 40,
             repeat: Infinity,
           }}
         >
-          {[...images, ...images, ...images].map((src, i) => (
+          {[...images, ...images].map((src, i) => (
             <div
               key={i}
-              className="min-w-[400px] h-[400px] flex-shrink-2 rounded-2xl overflow-hidden shadow-[0_0_50px_#ff0000]"
+              className="min-w-[250px] sm:min-w-[300px] md:min-w-[400px] h-[250px] sm:h-[300px] md:h-[400px] shrink-0 rounded-2xl overflow-hidden shadow-[0_0_50px_#ff0000]"
             >
               <img
                 src={src}
