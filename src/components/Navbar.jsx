@@ -31,7 +31,7 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 w-full z-50 px-6 py-12  flex justify-between items-center transition-all duration-500 ${
+      className={`fixed top-0 left-0 w-full z-50 px-6 py-4 mt-10 flex justify-between items-center transition-all duration-500 ${
         scrolled ? "bg-black/90 backdrop-blur-lg shadow-md" : "bg-transparent"
       }`}
     >
